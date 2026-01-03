@@ -1,0 +1,179 @@
+<!doctype>
+<html>
+<meta charset="utf-8" />
+<head>
+<title>scripts Texts</title>
+<link rel="stylesheet" href="//depts.washington.edu/kwatexts/css/dx.css"></link>
+<script src="js/dx.js"></script>
+<script src="js/popcorn.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Abel|Bree+Serif" rel="stylesheet">
+</head>
+<body>
+<div id="main-container">
+<h1>scripts Texts</h1>
+<div class=menu>
+</div>
+
+<p>
+####################
+</p>
+
+<p>
+Since space on homer accounts is limited, these scripts and the zip files and directories they
+refer to should be kept on another machine; in order to get the files onto the accounts as
+needed, simply run some of the scripts that do the work of copying the files over.
+</p>
+
+<p>
+NOTE: In order for MAKE_HTML to work properly, since it calls python scripts that are also in
+the scripts/ directory, all of these scripts should be run from the directory ABOVE (i.e.,
+containing) the scripts/ directory.  e.g., you may have a directory called degxinag/ inside of
+which you unzip the scripts/ directory as well as the Deg_Xinag_texts/ directory.
+</p>
+
+<p>
+##########
+</p>
+
+<p>
+SHELL SCRIPTS:
+</p>
+
+<p>
+Call these scripts from the command line as needed.
+</p>
+
+<p>
+0)	INIT_DIR
+USAGE:	./scripts/INIT_DIR {source zip}
+</p>
+
+<p>
+Transforms a zip file ("Deg Xinag texts.zip") which contains the contents of the
+"Deg Xinag texts" folder on Google Drive into a directory ("Deg_Xinag_texts"), not
+only renaming some files for convenience but also pulling additional files, creating
+additional intro files not contained in the original directories, and generally doing
+the dirty work of making sure collection-specific issues are fixed before any HTML
+is generated.
+</p>
+
+<p>
+Should really only need to be called once; once the directory is successfully made,
+it shouldn't need to be made again unless something in the script itself changes.
+</p>
+
+<p>
+Note that this requires the friendlyname-inclusive versions of the tex files to be
+included on the degxinag account on homer!  For some reason they keep disappearing and
+that makes the Belle Deacon and Chapman index pages look much less pretty.
+</p>
+
+<p>
+Includes content based on the scripts pullbd.sh and pullch.sh.
+</p>
+
+<p>
+1)	MAKE_HTML
+USAGE:	./scripts/MAKE_HTML {source dir}
+</p>
+
+<p>
+Given a properly organized source directory ("Deg_Xinag_texts"), generates .html files
+corresponding to annotation-ready audio pages for each text in a collection, index
+pages for each collection pointing to all the audio pages, and a page that points to
+all the collections (collections.html).
+</p>
+
+<p>
+Prints some output for each file it processes.
+</p>
+
+<p>
+Includes content based on the scripts makeallbelledeacon.sh and makeallchapman.sh.
+</p>
+
+<p>
+2)	SEND_HTML
+USAGE:	./scripts/SEND_HTML {source dir}
+</p>
+
+<p>
+Copies all .html files (maintaining directory structure) from the source directory
+to the degxinag account on homer.
+</p>
+
+<p>
+3)	SEND_MEDIA
+USAGE:	./scripts/SEND_MEDIA {source dir}
+</p>
+
+<p>
+Copies all .mp3 and .avi files (maintaining directory structure) from the source
+directory to the dxmedia account on homer.
+</p>
+
+<p>
+Note that .wav files are omitted, since in general these are redundant with the
+.mp3 files and space on homer accounts is extremely limited.
+</p>
+
+<p>
+It takes a VERY long time for everything to copy over, and currently all the
+needed files are already on the account, so there should be no need to use
+this script unless something major changes.
+</p>
+
+<p>
+Also copies the .pdf files for the Chapman and Kari transcriptions, even though
+those go to the degxinag account on homer, since again they only need to be copied
+once and doing so takes a long time.
+</p>
+
+<p>
+##########
+</p>
+
+<p>
+PYTHON SCRIPTS:
+</p>
+
+<p>
+These are auxiliary; they're called within the scripts, so there's generally no
+need to call them on their own.  They are listed here for reference only.
+</p>
+
+<p>
+1)	cleanintro.py
+USAGE:	cat {txt file} | python3 cleanintro.py >> {html file}
+</p>
+
+<p>
+Called by MAKE_HTML to clean up the .txt file containing the introductory text for
+a given collection before adding it to the index html file.
+</p>
+
+<p>
+2)	tex2html.py
+USAGE:	cat {tex file} | python3 tex2html.py {audio file or dir} > {html file}
+</p>
+
+<p>
+Called by MAKE_HTML to turn tex files, such as those for the Belle Deacon, Chapman,
+and Lady in Driftwood texts, into corresponding .html files.
+</p>
+
+<p>
+3)	doc2html.py
+USAGE:	cat {doc file} | python3 doc2html.py {source dir} {collection dir} {html file}
+</p>
+
+<p>
+Called by MAKE_HTML to turn Gileg.doc into all of the necessary .html files
+corresponding to the texts within it.
+</p>
+
+<p>
+####################
+</p>
+
+</div></body></html>
