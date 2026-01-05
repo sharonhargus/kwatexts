@@ -1,0 +1,36 @@
+<!DOCTYPE >
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Kwadacha Texts</title>
+<link rel="stylesheet" href="css/dx.css">
+<link rel="shortcut icon" href="//depts.washington.edu/kwatexts/imgs/raven-icon.png" />
+<script src="js/dx.js"></script>
+<script src="js/popcorn/popcorn-complete.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Abel|Bree+Serif" rel="stylesheet">
+</head>
+<body>
+<div class="flexwrap">
+<div class="headerbackground">
+        <img src="imgs/header_kwa.png" class="headerkwa" title="Prairie Mt. above the frozen Finlay R. (photo by Sharon Hargus)">
+        <img src="imgs/header_texts.png" class="headertexts">
+</div>
+<h1>About Recordings</h1>
+<img style="display:block; margin-left:  auto; margin-right: auto;padding:30px 30px 0px 30px" src="imgs/MIKE_ABOU.jpg" alt="Mike Abou, 2000.  Photo by Sharon Hargus" width="500vw",height="auto">
+<p style="font-size:14px;display:block;margin-left:auto;margin-right:auto;">Mike Abou,  2000.  Photo by Sharon Hargus</p>
+
+<p style="font-size:20px;padding:0px 30px 0px 30px">
+These recordings of Mike Abou were made by Sharon Hargus from 1999-2012.
+</p><p style="font-size:20px;padding:0px 30px 0px 30px">
+Mike mostly speaks in Tsek'ene on these recordings but occaisionally  uses a English word or phrase.  To increase the pedagogical value of these texts, the English in the transcribed text has been translated into Tsek'ene by Mary Charlie,  Eileen McCook or Nellie Charlie.  On the recording, however, the listener will hear Mike's voice only.</p>
+
+<div class="footer">
+<div class="footertext">
+University of Washington Department of Linguistics | Box 354340 Seattle, WA 98195-4340
+</div>
+<a class="footerbutton" href="http://faculty.washington.edu/sharon/">Prof. Sharon Hargus</a>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!doctype>
+<html>
+<meta charset="utf-8" />
+<head>
+<title>Autobiographical Texts</title>
+<link rel="stylesheet" href="//depts.washington.edu/kwatexts/css/dx.css"></link>
+<link href="https://fonts.googleapis.com/css?family=Abel|Bree+Serif" rel="stylesheet">
+</head>
+<body>
+<div id="main-container">
+<h1>Autobiographical Texts</h1>
+<div class=menu>
+<a href="overview.html">Overview of life in Kwadacha</a>
+<a href="frank_abou.html">Frank Abou</a>
+<a href="grizzly.html">Grizzly story</a>
+<a href="louie.html">Louie and Mike</a>
+<a href="mike_brother.html">Mike's Brother</a>
+<a href="stores.html">Stores in Fort Ware</a>
+</div>
+</div></body></html>
