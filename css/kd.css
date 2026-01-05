@@ -190,7 +190,7 @@ h3 {
 			}
 
 			.headerbackground {
-				background-image: url("http://depts.washington.edu/kwatexts/imgs/header_lg.jpg");
+				background-image: url("../imgs/header_lg.jpg");
 				height: 400px;
 				display: flex;
 				display: -webkit-flex;
@@ -227,7 +227,7 @@ h3 {
 			}
 
 			.headerbackground {
-				background-image: url("http://depts.washington.edu/kwatexts/imgs/header_lg.jpg");
+				background-image: url("../imgs/header_lg.jpg");
 				height: 400px;
 				display: flex;
 				display: -webkit-flex;
@@ -265,7 +265,7 @@ h3 {
 
 	
 			.headerbackground {
-				background-image: url("http://depts.washington.edu/kwatexts/imgs/header_lg.jpg");
+				background-image: url("../imgs/header_lg.jpg");
 				height: 400px;
 				display: flex;
 				display: -webkit-flex;

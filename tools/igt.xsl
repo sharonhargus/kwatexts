@@ -28,7 +28,7 @@
             <body>
             <div id="container">
                 <div id="header">
-                <h2><a href="http://depts.washington.edu/kwatexts">Nuts'oodalh Texts and Recordings</a></h2>
+                <h2><a href="https://sharonhargus.github.io/kwatexts">Nuts'oodalh Texts and Recordings</a></h2>
             </div>
             <div id="content">
                 <div id="titleBox">
